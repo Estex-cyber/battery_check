@@ -14,8 +14,9 @@ if int(battery.percent <= 10):
         print("Can't be played")
         if int(battery.percent == 10) or int(battery.percent < 10):
             print("**Warning**", battery.percent, "%", "Low")
-            if int(battery.percent == 5) or int(battery.percent < 5):
+            if int(battery.percent == 7) or int(battery.percent < 7):
                 print("Very low!")
+                print("Needs to be charged RightNow")
                 quit()
     elif bool(battery.power_plugged == True):
         print("Continue charging")
