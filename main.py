@@ -10,7 +10,7 @@ elif not battery.power_plugged:
     print("Discharge time", int(battery.secsleft), "sec left")
 
 if int(battery.percent == 10) or int(battery.percent < 10):
-    if bool(battery.power_plugged == False)
+    if bool(battery.power_plugged == False):
         print("battery is low!", battery.percent, "%)
         if int(battery.percent == 7) or int(battery.percent < 7):
             print("**Warning**", battery.percent, "battery is very low!", "%")
