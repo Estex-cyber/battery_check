@@ -13,7 +13,7 @@ if int(battery.percent == 10) or int(battery.percent < 10):
     if bool(battery.power_plugged == False):
         print("battery is low!", battery.percent, "%)
         if int(battery.percent == 7) or int(battery.percent < 7):
-            print("**Warning**", battery.percent, "battery is very low!", "%")
+            print("**Warning**", battery.percent, "%", I will"battery is very low!")
             quit()
     elif bool(battery.power_plugged == True):
         print("Continue charging")
